@@ -1,0 +1,12 @@
+
+*.cache
+*.cache
+*.json
+*.csproj
+*.props
+*.targets
+*.sln
+classExercises/.vs/classExercises/v16/.suo
+*.editorconfig
+*.editorconfig
+*.cache
