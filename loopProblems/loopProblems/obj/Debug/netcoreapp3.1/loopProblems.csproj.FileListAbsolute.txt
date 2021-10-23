@@ -1,0 +1,14 @@
+C:\Users\linde\dev\C#\loopProblems\loopProblems\bin\Debug\netcoreapp3.1\loopProblems.exe
+C:\Users\linde\dev\C#\loopProblems\loopProblems\bin\Debug\netcoreapp3.1\loopProblems.deps.json
+C:\Users\linde\dev\C#\loopProblems\loopProblems\bin\Debug\netcoreapp3.1\loopProblems.runtimeconfig.json
+C:\Users\linde\dev\C#\loopProblems\loopProblems\bin\Debug\netcoreapp3.1\loopProblems.runtimeconfig.dev.json
+C:\Users\linde\dev\C#\loopProblems\loopProblems\bin\Debug\netcoreapp3.1\loopProblems.dll
+C:\Users\linde\dev\C#\loopProblems\loopProblems\bin\Debug\netcoreapp3.1\loopProblems.pdb
+C:\Users\linde\dev\C#\loopProblems\loopProblems\obj\Debug\netcoreapp3.1\loopProblems.csproj.AssemblyReference.cache
+C:\Users\linde\dev\C#\loopProblems\loopProblems\obj\Debug\netcoreapp3.1\loopProblems.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\linde\dev\C#\loopProblems\loopProblems\obj\Debug\netcoreapp3.1\loopProblems.AssemblyInfoInputs.cache
+C:\Users\linde\dev\C#\loopProblems\loopProblems\obj\Debug\netcoreapp3.1\loopProblems.AssemblyInfo.cs
+C:\Users\linde\dev\C#\loopProblems\loopProblems\obj\Debug\netcoreapp3.1\loopProblems.csproj.CoreCompileInputs.cache
+C:\Users\linde\dev\C#\loopProblems\loopProblems\obj\Debug\netcoreapp3.1\loopProblems.dll
+C:\Users\linde\dev\C#\loopProblems\loopProblems\obj\Debug\netcoreapp3.1\loopProblems.pdb
+C:\Users\linde\dev\C#\loopProblems\loopProblems\obj\Debug\netcoreapp3.1\loopProblems.genruntimeconfig.cache
