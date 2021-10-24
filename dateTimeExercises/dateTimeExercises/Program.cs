@@ -13,7 +13,10 @@ namespace dateTimeExercises
          */
         static void getDayDifference()
         {
-            DateTime reference = new DateTime(2018, 03, 22);
+            Console.WriteLine("Enter reference date: ");
+            DateTime reference = DateTime.Parse(Console.ReadLine());
+            Console.Write("Enter # of reference points: ");
+            Console.Write("\n");
             int n = int.Parse(Console.ReadLine());
             for(int i = 0; i < n; i++)
             {
