@@ -5,3 +5,10 @@
 *.cache
 *.txt
 *.json
+*.sln
+*.props
+*.targets
+*.editorconfig
+*.v2
+classExercises/.vs/classExercises/v16/.suo
+*.csproj
