@@ -63,8 +63,8 @@ namespace arrays
          */
         static void SeperateEvenFromOdd (int[] arr)
         {
-            int oddLength;
-            int evenLength;
+            int oddLength = 0;
+            int evenLength = 0;
             ArrayList oddList = new ArrayList();
             ArrayList evenList = new ArrayList();
 
@@ -82,8 +82,8 @@ namespace arrays
 
             int[] evenArr = new int[evenLength];
             int[] oddArr  = new int[oddLength];
-            evenArr = evenList.ToArray(int);
-            oddArr  = oddList.ToArray(int);
+            //evenArr = evenList.ToArray();
+            //oddArr  = oddList.ToArray();
         }
     }
 }
