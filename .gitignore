@@ -12,3 +12,8 @@
 *.v2
 classExercises/.vs/classExercises/v16/.suo
 *.csproj
+*.editorconfig
+arrays/arrays/.vs/arrays/v16/.suo
+*.cache
+*.cache
+*.editorconfig

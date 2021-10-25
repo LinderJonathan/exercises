@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 
 namespace arrays
 {
@@ -10,7 +11,8 @@ namespace arrays
         static void Main(string[] args)
         {
             //Console.WriteLine(SumIntArray(new int[]{1,2,3,4}));
-            uniqueElements(new int[]{ 1, 1, 2, 3, 5, 4, 5, 6, 8, 8 }); 
+            //uniqueElements(new int[]{ 1, 1, 2, 3, 5, 4, 5, 6, 8, 8 });
+
             Console.Write("Type any key to exit");
             Console.ReadKey();
         }
@@ -55,6 +57,33 @@ namespace arrays
                     Console.Write(" {0} ", arr[i]);
                 }
             }
+        }
+        /**
+         * Array exercise 10. Can obviously be solved without using lists
+         */
+        static void SeperateEvenFromOdd (int[] arr)
+        {
+            int oddLength;
+            int evenLength;
+            ArrayList oddList = new ArrayList();
+            ArrayList evenList = new ArrayList();
+
+            for (int i = 0; i < arr.Length; i++)
+            {
+                if (arr[i] % 2 == 0)
+                {
+                    evenList.Add(arr[i]);
+                    evenLength++;
+                }
+                else
+                    oddList.Add(arr[i]);
+                    oddLength++;
+            }
+
+            int[] evenArr = new int[evenLength];
+            int[] oddArr  = new int[oddLength];
+            evenArr = evenList.ToArray(int);
+            oddArr  = oddList.ToArray(int);
         }
     }
 }
