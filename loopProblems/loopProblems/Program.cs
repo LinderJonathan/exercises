@@ -11,6 +11,7 @@ namespace loopProblems
             //Console.ReadKey();
             //christmasTree();
             //DiamondPattern();
+            Console.WriteLine("Lol");
         }
 
         /**
