@@ -12,7 +12,8 @@ namespace arrays
         {
             //Console.WriteLine(SumIntArray(new int[]{1,2,3,4}));
             //uniqueElements(new int[]{ 1, 1, 2, 3, 5, 4, 5, 6, 8, 8 });
-            descendingOrder(new int[] { 1, 2, 5,3,9,7,6,3,1,6, 5, 6 });
+            //descendingOrder(new int[] { 1, 2, 5,3,9,7,6,3,1,6, 5, 6 });
+            Console.WriteLine(SndLargest(new int[] { 1,2,3,4,9,9,9,9,7,8 }));
             Console.Write("Type any key to exit");
             Console.ReadKey();
         }
@@ -120,18 +121,47 @@ namespace arrays
          */
         static int SndLargest (int[] arr)
         {
-            int largest = arr[0];
+            int n = 2,tmp = 0;
             
-            for (int i = 0; i < arr.Length; i++)
+            for (int i = 1; i < arr.Length; i++)
             {
-
-                if (arr[i] >= largest)
+                for (int j = i+1; j < arr.Length; j++)
                 {
-                    largest = arr[i];
+                    if (arr[i] < arr[j])
+                    {
+                        tmp = arr[i];
+                        arr[i] = arr[j];
+                        arr[j] = tmp;
+                    }
                 }
-
+            }
+            while (n < arr.Length)
+            {
+                if (arr[n-1] > arr[n])
+                {
+                    return arr[n];
+                }
+                else
+                {
+                    n++;
+                }
+            }
+            if (arr[arr.Length-2] >= arr[arr.Length - 1])
+            {
+                return arr[arr.Length - 2];
             }
             return 0;
+        }
+
+        /**
+         * Array exercise 21, matrix mutliplication
+         */
+        static void MatrixMul(int[,] m1, int[,] m2)
+        {
+            if (m1.GetLength(1) != m2.GetLength(0))
+            {
+                throw new ArgumentException("Matrix dimensions are invalid");
+            }
         }
     }
 }
