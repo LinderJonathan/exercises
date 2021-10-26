@@ -10,17 +10,39 @@ namespace arrays
     {
         static void Main(string[] args)
         {
+
             //Console.WriteLine(SumIntArray(new int[]{1,2,3,4}));
             //uniqueElements(new int[]{ 1, 1, 2, 3, 5, 4, 5, 6, 8, 8 });
             //descendingOrder(new int[] { 1, 2, 5,3,9,7,6,3,1,6, 5, 6 });
-            Console.WriteLine(SndLargest(new int[] { 1,2,3,4,9,9,9,9,7,8 }));
-            Console.Write("Type any key to exit");
+            //Console.WriteLine(SndLargest(new int[] { 1,2,3,4,9,9,9,9,7,8 }));
+            //Console.WriteLine(LeftDiagonalSum(new int[,] { { 1, 2 }, { 3, 4 } }));
+            //sumRowsCols(new int[,] { { 1, 2 }, { 3, 4 } });
+            printMat(upperRightZero(new int[,] { { 1, 2,3}, { 4,5,6 },{ 7, 8, 9 } }));
+            
+            Console.Write("\n" + "Type any key to exit");
             Console.ReadKey();
         }
-        /**
-         * Array exercise 3, sum of elements 
-         */
-        static int SumIntArray(int[] arr)
+        static void printMat (int[,] m)
+        {
+            int rowLength = m.GetLength(0);
+            int colLength = m.GetLength(1);
+
+            for (int i = 0; i < rowLength; i++)
+            {
+                for (int j = 0; j < colLength; j++)
+                {
+                    Console.Write(string.Format("{0} ", m[i, j]));
+                }
+                Console.Write(Environment.NewLine + Environment.NewLine);
+            }
+            Console.ReadLine();
+        }
+
+
+/**
+ * Array exercise 3, sum of elements 
+ */
+static int SumIntArray(int[] arr)
         {
             int sum = 0;
             for (int i = 0; i < arr.Length; i++)
@@ -162,6 +184,58 @@ namespace arrays
             {
                 throw new ArgumentException("Matrix dimensions are invalid");
             }
+        }
+
+        /**
+         * Array exercise 24, sum of left diagonals in square matrix
+         */
+
+        static int LeftDiagonalSum (int[,] m)
+        {
+            int sum = 0,j = 0;
+            for (int i = 0; i < m.GetLength(0); i++)
+            {
+                sum += m[i, j];
+                j++;
+            }
+            return sum;
+        }
+
+        /**
+         * Array exercise 25, sum of rows and columns of square matrix
+         */
+        static void sumRowsCols (int [,] m)
+        {
+            int rows = m.GetLength(0);
+            int cols = m.GetLength(1);
+            for (int i = 0; i < rows; i++)
+            {
+                int colSum = 0, rowSum = 0;
+                for (int j = 0; j < cols; j++)
+                {
+                    rowSum += m[i, j];
+                    colSum += m[j, i];
+                }
+                Console.Write("{0}:st columnsum = {1}" + "\n", i+1, colSum);
+                Console.Write("{0}:st rowsum    = {1}" + "\n", i+1, rowSum);
+            }
+        }
+
+        /**
+         * Array exercise 27, 0's on upper triangular matrix, right-bound
+         */
+        static int[,] upperRightZero (int [,] m)
+        {
+            int rows = m.GetLength(0);
+            int cols = m.GetLength(1);
+            for (int i = 0; i < rows; i++)
+            {
+                for (int j = i+1; j < cols; j++)
+                {
+                    m[i, j] = 0;
+                }
+            }
+            return m;
         }
     }
 }

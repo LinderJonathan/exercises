@@ -8,19 +8,19 @@
     ".NETCoreApp,Version=v3.1": []
   },
   "packageFolders": {
-    "C:\\Users\\linde\\.nuget\\packages\\": {}
+    "C:\\Users\\46733\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\linde\\dev\\C#\\exercises\\arrays\\arrays\\arrays.csproj",
+      "projectUniqueName": "C:\\Users\\46733\\dev\\C#\\exercises\\arrays\\arrays\\arrays.csproj",
       "projectName": "arrays",
-      "projectPath": "C:\\Users\\linde\\dev\\C#\\exercises\\arrays\\arrays\\arrays.csproj",
-      "packagesPath": "C:\\Users\\linde\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\linde\\dev\\C#\\exercises\\arrays\\arrays\\obj\\",
+      "projectPath": "C:\\Users\\46733\\dev\\C#\\exercises\\arrays\\arrays\\arrays.csproj",
+      "packagesPath": "C:\\Users\\46733\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\46733\\dev\\C#\\exercises\\arrays\\arrays\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\linde\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\46733\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

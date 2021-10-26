@@ -19,3 +19,8 @@ arrays/arrays/.vs/arrays/v16/.suo
 *.editorconfig
 loopProblems/loopProblems/.vs/slnx.sqlite
 loopProblems/loopProblems/.vs/loopProblems/v16/.suo
+*.cache
+*.editorconfig
+*.editorconfig
+*.props
+*.json
