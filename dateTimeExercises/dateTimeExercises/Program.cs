@@ -7,9 +7,15 @@ namespace dateTimeExercises
         static void Main(string[] args)
         {
             DateTime dt1 = new DateTime(2016, 6, 8, 11, 49, 0);
+            DateTime[] dates = { DateTime.Now,
+                           new DateTime(2016, 8, 16, 9, 28, 0),
+                           new DateTime(2011, 5, 28, 10, 35, 0),
+                           new DateTime(1979, 12, 25, 14, 30, 0) };
             //getMonthDifference();
             //shortFormatDate(dt1);
-            displayTimeProperties(dt1);
+            //displayTimeProperties(dt1);
+            //localTimeGlobalTime();
+            displayArrayDates(dates);
         }
         /**
          * Method calculates a number of time differences in days from fixed referenceDate
@@ -56,5 +62,25 @@ namespace dateTimeExercises
             Console.Write(dt1.Second + "\n");
             Console.Write(dt1.Millisecond + "\n");
         }
+        /**
+         * DateTime exercise 5. Display local and global UTC time
+         */
+        static void localTimeGlobalTime ()
+        {
+            Console.WriteLine("Local date and time: " + DateTime.Now);
+            Console.WriteLine("UTC date and time: " + DateTime.UtcNow);
+        }
+        /**
+         * DateTime exercise 7. Display time in different formats from array of type DateTime
+         */
+        static void displayArrayDates (DateTime[] dates)
+        {
+            foreach (DateTime date in dates)
+            {
+                Console.WriteLine("day: {0:d}, time: {1:g}",date.Date, date.TimeOfDay);
+                Console.WriteLine("day: {0:d}, time: {0:t}", date);
+            }
+        }
+
     }
 }
