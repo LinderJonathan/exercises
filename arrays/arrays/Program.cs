@@ -180,10 +180,36 @@ static int SumIntArray(int[] arr)
          */
         static void MatrixMul(int[,] m1, int[,] m2)
         {
+            int sum = 0;
             if (m1.GetLength(1) != m2.GetLength(0))
             {
                 throw new ArgumentException("Matrix dimensions are invalid");
             }
+            else
+            {
+                int[,] resultMat = new int[m1.GetLength(1), m2.GetLength(0)];
+
+                for (int i = 0; i < resultMat.GetLength(0); i++)
+                {
+                    for (int j = 0; i < resultMat.GetLength(1); j++)
+                    {
+                        resultMat[i, j] = 0;
+                        for (int k = 0; k < resultMat.GetLength(0); k++)
+                        {
+                            for (int n = 0; n < resultMat.GetLength(1); n++)
+                            {
+                                sum = 0;
+                                for (int t = 0; t < resultMat.GetLength(1); t++)
+                                {
+
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+
         }
 
         /**
