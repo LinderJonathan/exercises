@@ -7,6 +7,7 @@ namespace structureExercises
         static void Main(string[] args)
         {
             AddStruct.main();
+            nestedEmployee.main();
         }
     }
 }

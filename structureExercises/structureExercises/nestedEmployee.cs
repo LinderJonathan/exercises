@@ -22,7 +22,7 @@ namespace structureExercises
 
     {
         static int maxEmployees = 2;
-        static void main()
+        public static void main()
         {
             employee[] employees = new employee[maxEmployees];
             for (int i = 0; i < employees.Length; i++)
