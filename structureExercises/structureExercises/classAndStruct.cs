@@ -25,6 +25,11 @@ public struct newStruct
 {
     public int x;
     public int y;
+    public newStruct(int x, int y)
+    {
+        this.x = x;
+        this.y = y;
+    }
 }
 namespace structureExercises
 {
@@ -37,7 +42,8 @@ namespace structureExercises
 
             newClass classObj = new newClass(750, 750);
             //TODO: Research why the code below doesnt work
-            //newStruct structObj = new newStruct(750, 750);
+            newStruct structObj = new newStruct(750, 750);
+            Console.WriteLine(classObj.x);
         }
     }
 }
